@@ -45,10 +45,10 @@ export function TeacherEdit() {
     return (
         <div className="form">
             <h1>Updating {updateTeacher.name} Profile</h1>
-            <TextField className="Input" placeholder={updateTeacher.name} onChange={e => setupdateTeacher({ ...updateTeacher, name: e.target.value })} />
-            <TextField className="Input" placeholder={updateTeacher.subject} onChange={e => setupdateTeacher({ ...updateTeacher, subject: e.target.value })} />
-            <TextField className="Input" placeholder={updateTeacher.age} onChange={e => setupdateTeacher({ ...updateTeacher, age: e.target.value })} />
-            <TextField className="Input" placeholder={updateTeacher.phonenumber} onChange={e => setupdateTeacher({ ...updateTeacher, phonenumber: e.target.value })} />
+            <TextField className="Input" placeholder={updateTeacher.name ? updateTeacher.name : "Enter name..."} onChange={e => setupdateTeacher({ ...updateTeacher, name: e.target.value })} />
+            <TextField className="Input" placeholder={updateTeacher.subject ? updateTeacher.subject : "Enter Subject..."} onChange={e => setupdateTeacher({ ...updateTeacher, subject: e.target.value })} />
+            <TextField className="Input" placeholder={updateTeacher.age ? updateTeacher.age : "Enter Age..."} onChange={e => setupdateTeacher({ ...updateTeacher, age: e.target.value })} />
+            <TextField className="Input" placeholder={updateTeacher.phonenumber ? updateTeacher.phonenumber : "Enter Phone number..."} onChange={e => setupdateTeacher({ ...updateTeacher, phonenumber: e.target.value })} />
             <Button className="Btn" variant="outlined" color="error" type="cancel" onClick={() => navigate('/teachers')}>
                 Cancel
             </Button>

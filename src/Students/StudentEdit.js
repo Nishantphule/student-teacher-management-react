@@ -45,10 +45,10 @@ export function StudentEdit() {
     return (
         <div className="form">
             <h1>Updating {updateStudent.name} Profile</h1>
-            <TextField className="Input" placeholder={updateStudent.name} onChange={e => setupdateStudent({ ...updateStudent, name: e.target.value })} />
-            <TextField className="Input" placeholder={updateStudent.course} onChange={e => setupdateStudent({ ...updateStudent, course: e.target.value })} />
-            <TextField className="Input" placeholder={updateStudent.age} onChange={e => setupdateStudent({ ...updateStudent, age: e.target.value })} />
-            <TextField className="Input" placeholder={updateStudent.phonenumber} onChange={e => setupdateStudent({ ...updateStudent, phonenumber: e.target.value })} />
+            <TextField className="Input" placeholder={updateStudent.name ? updateStudent.name : "Enter Name..."} onChange={e => setupdateStudent({ ...updateStudent, name: e.target.value })} />
+            <TextField className="Input" placeholder={updateStudent.course ? updateStudent.course : "Enter Course..."} onChange={e => setupdateStudent({ ...updateStudent, course: e.target.value })} />
+            <TextField className="Input" placeholder={updateStudent.age ? updateStudent.age : "Enter Age..."} onChange={e => setupdateStudent({ ...updateStudent, age: e.target.value })} />
+            <TextField className="Input" placeholder={updateStudent.phonenumber ? updateStudent.phonenumber : "Enter Phone number..."} onChange={e => setupdateStudent({ ...updateStudent, phonenumber: e.target.value })} />
             <Button className="Btn" type="cancel" variant="outlined" color="error" onClick={() => navigate('/students')}>
                 Cancel
             </Button>

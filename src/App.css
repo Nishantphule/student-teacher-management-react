@@ -4,8 +4,9 @@
 
 /* homepage css*/
 .homePage {
-  width: 100%;
+  width: 80%;
   height: 500px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
