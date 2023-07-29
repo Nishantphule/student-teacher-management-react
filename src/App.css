@@ -1,38 +1,100 @@
 .App {
-  text-align: center;
+  margin-top: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* homepage css*/
+.homePage {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Not Found page css */
+.notFoundContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.notFound {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  background-image: url(./components/404-error-page-not-found.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* about page */
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* teachers students forms css*/
+.AddBtn button {
+  margin: 30px 50px 30px;
+}
+
+.CardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  justify-content: space-evenly;
+}
+
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  row-gap: 10px;
+  padding-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.Input {
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Btn {
+  width: 20%;
+}
+
+@media only screen and (max-width:786px) {
+  .Input {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Btn {
+    width: 30%;
+  }
+}
+
+
+/* Card Builder css*/
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: min-content;
+}
+
+@media only screen and (min-width:844px) {
+  .card {
+    width: 500px;
+    height: min-content;
   }
 }
