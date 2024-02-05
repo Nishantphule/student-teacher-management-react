@@ -25,7 +25,7 @@ export function TeacherEdit() {
         }
         else {
             navigate('/teachers')
-            console.log("no teacher found");
+            alert("no teacher found");
         }
     }, [id])
 

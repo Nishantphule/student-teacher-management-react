@@ -24,7 +24,7 @@ export function StudentEdit() {
         }
         else {
             navigate('/students')
-            console.log("no Student found");
+            alert("no Student found");
         }
     }, [id])
 
